@@ -8,18 +8,14 @@
 
 import UIKit
 import LocalAuthentication
-import ionicons
 
 class LoginViewController: BaseViewController {
     
     @IBOutlet weak var AuthOverlayView : UIView!
-    @IBOutlet weak var IphoneImage : UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        self.IphoneImage.image = IonIcons.imageWithIcon(ion_iphone, size: 100, color: UIColor.whiteColor())
     }    
 
     override func didReceiveMemoryWarning() {

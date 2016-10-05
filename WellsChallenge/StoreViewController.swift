@@ -34,6 +34,13 @@ class StoreViewController : BaseViewController{
         self.PersonalShopperButtonImageVIew.image = IonIcons.imageWithIcon(ion_bag, size: 44, color: UIColor.whiteColor())
         self.OffersButtonImageView.image = IonIcons.imageWithIcon(ion_pricetag, size: 44, color: UIColor.whiteColor())
         self.LoyaltyButtonImageView.image = IonIcons.imageWithIcon(ion_trophy, size: 44, color: UIColor.whiteColor())
+       
+        // Navigation title image
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+        imageView.contentMode = .ScaleAspectFit
+        let titleImage = UIImage(named: "app_name")
+        imageView.image = titleImage
+        navigationItem.titleView = imageView
         
         
         self.onRefreshLoyalty()
