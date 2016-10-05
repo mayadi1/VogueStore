@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18348AA71DA5C00F005F0449 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18348AA61DA5C00F005F0449 /* Item.swift */; };
 		3AE6C8251D9C5675002F2895 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE6C8241D9C5675002F2895 /* AppDelegate.swift */; };
 		3AE6C8271D9C5675002F2895 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE6C8261D9C5675002F2895 /* LoginViewController.swift */; };
 		3AE6C82A1D9C5675002F2895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE6C8281D9C5675002F2895 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18348AA61DA5C00F005F0449 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		3029C62B8A58114BBB4AB6F4 /* Pods-WellsChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellsChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WellsChallenge/Pods-WellsChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		3AE6C8211D9C5675002F2895 /* WellsChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WellsChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE6C8241D9C5675002F2895 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				3AE6C8511D9DC03C002F2895 /* PageData.swift */,
 				3AE6C8531D9DDAC6002F2895 /* User.swift */,
 				3AE6C8551D9DE317002F2895 /* CartButtonView.swift */,
+				18348AA61DA5C00F005F0449 /* Item.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				3AE6C8471D9D9F0D002F2895 /* Common.swift in Sources */,
 				3AE6C8431D9D9E70002F2895 /* UIColor+Ext.swift in Sources */,
 				3AE6C8271D9C5675002F2895 /* LoginViewController.swift in Sources */,
+				18348AA71DA5C00F005F0449 /* Item.swift in Sources */,
 				3AE6C8391D9C6BC6002F2895 /* ServerManager.swift in Sources */,
 				3AE6C8561D9DE317002F2895 /* CartButtonView.swift in Sources */,
 				3AE6C8521D9DC03C002F2895 /* PageData.swift in Sources */,
