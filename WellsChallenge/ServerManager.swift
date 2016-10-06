@@ -34,9 +34,7 @@ class ServerManager : NSObject{
         
         let ServerUrl = NSURL(string: "http://54.191.35.66:8181/pfchang/api/buy?username=Michael&grandTotal=0")
         let url:NSURL = ServerUrl!
-        
         let post:NSString = ""
-        
         let postData:NSData = post.dataUsingEncoding(NSASCIIStringEncoding)!
         let postLength:NSString = String( postData.length )
         
@@ -49,12 +47,8 @@ class ServerManager : NSObject{
         
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
-//            print("Response: \(response)")
             do {
                 if(data != nil){
-//                        let strData = NSString(data: data!, encoding: NSUTF8StringEncoding)
-//                        print("Body: \(strData)")
-                    
                     self.CurrentUser = User()
                     
                     let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableLeaves) as! NSDictionary
@@ -68,11 +62,9 @@ class ServerManager : NSObject{
                     dispatch_async(dispatch_get_main_queue(), {
                         NSNotificationCenter.defaultCenter().postNotificationName(LOYALTY_REFRESH_NOTIF, object: self)
                     })
-                    
                 }
             } catch {}
         })
         task.resume()
-        
     }
 }

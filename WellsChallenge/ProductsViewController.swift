@@ -28,7 +28,7 @@ class ProductsViewController : BaseViewController, UICollectionViewDelegate, UIC
         super.viewWillAppear(animated)
         setupNavigationBar()
         
-        //Add dummy data
+        //Add data
         setupDataForCollectionView ()
     }
     
@@ -126,7 +126,7 @@ class ProductsViewController : BaseViewController, UICollectionViewDelegate, UIC
         return size
     }
     
-    // MARK: Dummy Data
+    // MARK: Data Setup
     func setupDataForCollectionView () {
         // Featured content
         let item1 = Item(name: "Magician Hat", price: "$39.00", imageName: "magician_hat")

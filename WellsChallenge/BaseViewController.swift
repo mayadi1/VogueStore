@@ -10,7 +10,7 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
-    //should work by setting in plist, but failing for some reason
+    //Hide status bar
     override func prefersStatusBarHidden() -> Bool {
         return true
     }

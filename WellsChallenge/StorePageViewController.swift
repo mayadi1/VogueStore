@@ -11,7 +11,7 @@ import UIKit
 class StorePageViewController : UIPageViewController{
     
 
-    //hardcoded page data, should be from server/db
+    //hardcoded page data
     var pageData = [PageData(title: "", desc: "", jumpText: "", background: "red_sneaker"),
                     PageData(title: "", desc: "", jumpText: "", background: "black_heel"),
                     PageData(title: "Fashion Show", desc: "December 1st 2015", jumpText: "Get Tickets", background: "fashion_show"),
@@ -80,8 +80,7 @@ extension StorePageViewController : UIPageViewControllerDataSource{
                 index = 0
             }else{
                 index = index + 1
-            }
-            
+            }            
             return viewPage(index)
         }
 
