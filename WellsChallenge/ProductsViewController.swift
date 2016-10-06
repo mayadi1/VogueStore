@@ -29,7 +29,7 @@ class ProductsViewController : BaseViewController, UICollectionViewDelegate, UIC
         setupNavigationBar()
         
         //Add dummy data
-        addDummyData()
+        setupDataForCollectionView ()
     }
     
     //sets up the custom back and cart button
@@ -127,7 +127,7 @@ class ProductsViewController : BaseViewController, UICollectionViewDelegate, UIC
     }
     
     // MARK: Dummy Data
-    func addDummyData() {
+    func setupDataForCollectionView () {
         // Featured content
         let item1 = Item(name: "Magician Hat", price: "$39.00", imageName: "magician_hat")
         featuredData.append(item1)
@@ -142,5 +142,4 @@ class ProductsViewController : BaseViewController, UICollectionViewDelegate, UIC
         let item5 = Item(name: "Dress B", price: "$89.00", imageName: "pink_dress")
         data.append(item5)
     }
-
 }

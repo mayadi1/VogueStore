@@ -28,7 +28,6 @@ class LoginViewController: BaseViewController {
         self.authUser()
     }
     
-    
     //Request auth by touch
     func authUser(){
         
@@ -39,16 +38,14 @@ class LoginViewController: BaseViewController {
             
             self.showAlertViewIfNoBiometricSensorHasBeenDetected()
             return
-            
         }
         
         authenticationContext.evaluatePolicy(
             .DeviceOwnerAuthenticationWithBiometrics,
-            localizedReason: "Verify your identity",
+            localizedReason: "Use your fingerprint to acces VogueStore now.",
             reply: { [unowned self] (success, error) -> Void in
                 
                 if( success ) {
-                    
                     // Go to view controller
                     self.navigateToAuthenticatedViewController()
                     
@@ -65,7 +62,6 @@ class LoginViewController: BaseViewController {
                         self.AuthOverlayView.hidden = true
                     }
                 }
-                
             })
     }
    
@@ -78,12 +74,10 @@ class LoginViewController: BaseViewController {
         }
     }
     
-    
     func showAlertViewIfNoBiometricSensorHasBeenDetected(){
         //allows for devices that have no touchID, likely not for production but allows for quick testing in SIM
         self.navigateToAuthenticatedViewController()
         //showAlertWithTitle("Error", message: "This device does not have a TouchID sensor.")
-        
     }
     
     func showAlertWithTitle( title:String, message:String ) {
@@ -94,11 +88,8 @@ class LoginViewController: BaseViewController {
         alertVC.addAction(okAction)
         
         dispatch_async(dispatch_get_main_queue()) { () -> Void in
-            
             self.presentViewController(alertVC, animated: true, completion: nil)
-            
         }
-        
     }
     
    }
