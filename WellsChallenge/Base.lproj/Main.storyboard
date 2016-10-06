@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="WellsChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="VogueStore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -102,15 +103,155 @@
         <!--Shop-->
         <scene sceneID="TPx-Jy-xNy">
             <objects>
-                <viewController title="Shop" id="72u-7K-bUE" customClass="ProductsViewController" customModule="WellsChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Shop" id="72u-7K-bUE" customClass="ProductsViewController" customModule="VogueStore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4rx-f6-sRQ"/>
                         <viewControllerLayoutGuide type="bottom" id="aah-CW-f9W"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TDQ-S5-EIq">
+                    <view key="view" contentMode="scaleToFill" id="8qx-ID-bJJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uB0-Z7-nAf">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="25" id="DE7-5v-54I">
+                                    <size key="itemSize" width="325" height="204"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="featuredCell" id="T3H-tB-PdD">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="204"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="325" height="204"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured Item:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5D9-dL-mXV">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.32549019610000002" green="0.34509803919999998" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magician Hat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ag-ah-xbn">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="137" id="fAc-LW-HOW"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.32549019610000002" green="0.34509803919999998" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upe-xf-wHM">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.32549019610000002" green="0.34509803919999998" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" tag="300" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sNT-Xh-q7q">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="124" id="SPo-nP-Xla"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" tag="400" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJj-Zq-m87">
+                                                    <color key="backgroundColor" red="0.22352941179999999" green="0.32549019610000002" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <state key="normal" title="Add to cart">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" tag="500" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GQE-30-6f0">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="75" id="fSq-05-rdk"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="GQE-30-6f0" firstAttribute="top" secondItem="9ag-ah-xbn" secondAttribute="bottom" constant="9" id="1IW-Dh-yCh"/>
+                                            <constraint firstItem="upe-xf-wHM" firstAttribute="leading" secondItem="9ag-ah-xbn" secondAttribute="trailing" constant="8" symbolic="YES" id="1dl-zq-aQ2"/>
+                                            <constraint firstItem="5D9-dL-mXV" firstAttribute="baseline" secondItem="upe-xf-wHM" secondAttribute="baseline" id="2uT-pb-iB7"/>
+                                            <constraint firstItem="HJj-Zq-m87" firstAttribute="top" secondItem="sNT-Xh-q7q" secondAttribute="bottom" constant="8" symbolic="YES" id="4Sn-jn-e5P"/>
+                                            <constraint firstItem="sNT-Xh-q7q" firstAttribute="top" secondItem="9ag-ah-xbn" secondAttribute="bottom" constant="8" symbolic="YES" id="4gV-DZ-ujr"/>
+                                            <constraint firstItem="5D9-dL-mXV" firstAttribute="leading" secondItem="HJj-Zq-m87" secondAttribute="leading" id="71u-7O-lji"/>
+                                            <constraint firstItem="HJj-Zq-m87" firstAttribute="centerX" secondItem="sNT-Xh-q7q" secondAttribute="centerX" id="BOx-kV-XD9"/>
+                                            <constraint firstItem="9ag-ah-xbn" firstAttribute="leading" secondItem="T3H-tB-PdD" secondAttribute="leading" constant="105" id="D81-PO-e4q"/>
+                                            <constraint firstItem="HJj-Zq-m87" firstAttribute="trailing" secondItem="upe-xf-wHM" secondAttribute="trailing" id="Fkt-CA-aRL"/>
+                                            <constraint firstItem="GQE-30-6f0" firstAttribute="leading" secondItem="sNT-Xh-q7q" secondAttribute="leading" id="MnC-8k-SdM"/>
+                                            <constraint firstItem="HJj-Zq-m87" firstAttribute="top" secondItem="sNT-Xh-q7q" secondAttribute="bottom" constant="8" id="PGG-eA-iWV"/>
+                                            <constraint firstItem="sNT-Xh-q7q" firstAttribute="leading" secondItem="T3H-tB-PdD" secondAttribute="leadingMargin" constant="79" id="SMx-96-zBV"/>
+                                            <constraint firstItem="HJj-Zq-m87" firstAttribute="bottom" secondItem="T3H-tB-PdD" secondAttribute="bottomMargin" id="TT1-bS-wyJ"/>
+                                            <constraint firstItem="HJj-Zq-m87" firstAttribute="leading" secondItem="T3H-tB-PdD" secondAttribute="leadingMargin" id="U6t-s6-562"/>
+                                            <constraint firstItem="HJj-Zq-m87" firstAttribute="top" secondItem="GQE-30-6f0" secondAttribute="bottom" constant="53" id="UEg-Jb-ppJ"/>
+                                            <constraint firstItem="HJj-Zq-m87" firstAttribute="trailing" secondItem="T3H-tB-PdD" secondAttribute="trailingMargin" id="UgJ-WB-sdP"/>
+                                            <constraint firstItem="9ag-ah-xbn" firstAttribute="baseline" secondItem="upe-xf-wHM" secondAttribute="baseline" id="k6X-DD-1hN"/>
+                                        </constraints>
+                                        <size key="customSize" width="325" height="204"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="kMa-RK-60I">
+                                        <rect key="frame" x="88" y="214" width="150" height="203"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="203"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sneakers A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qA2-Pe-DdD">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="J3C-TO-Vtg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.32549019610000002" green="0.34509803919999998" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$39.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceW-A5-Cez">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.32549019610000002" green="0.34509803919999998" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" tag="300" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v5P-EL-gnY"/>
+                                                <button opaque="NO" tag="400" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fc0-dm-AU5">
+                                                    <color key="backgroundColor" red="0.22352941179999999" green="0.32549019610000002" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="26" id="fVl-CV-NE9"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <state key="normal" title="Add to cart">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="fc0-dm-AU5" firstAttribute="trailing" secondItem="kMa-RK-60I" secondAttribute="trailingMargin" id="7B3-R5-tbs"/>
+                                            <constraint firstItem="v5P-EL-gnY" firstAttribute="leading" secondItem="kMa-RK-60I" secondAttribute="leading" id="9Bd-Cp-l9x"/>
+                                            <constraint firstItem="qA2-Pe-DdD" firstAttribute="baseline" secondItem="ceW-A5-Cez" secondAttribute="baseline" id="JZt-ci-szm"/>
+                                            <constraint firstItem="ceW-A5-Cez" firstAttribute="trailing" secondItem="fc0-dm-AU5" secondAttribute="trailing" id="LgQ-4X-qvN"/>
+                                            <constraint firstItem="fc0-dm-AU5" firstAttribute="bottom" secondItem="kMa-RK-60I" secondAttribute="bottomMargin" id="Y4h-Q1-eKn"/>
+                                            <constraint firstItem="v5P-EL-gnY" firstAttribute="centerX" secondItem="fc0-dm-AU5" secondAttribute="centerX" id="dHc-ke-xWC"/>
+                                            <constraint firstItem="fc0-dm-AU5" firstAttribute="bottom" secondItem="kMa-RK-60I" secondAttribute="bottomMargin" id="eN4-Xr-O7K"/>
+                                            <constraint firstAttribute="trailing" secondItem="v5P-EL-gnY" secondAttribute="trailing" id="etD-z9-9Sz"/>
+                                            <constraint firstItem="qA2-Pe-DdD" firstAttribute="top" secondItem="kMa-RK-60I" secondAttribute="topMargin" id="gt3-b9-hEM"/>
+                                            <constraint firstItem="qA2-Pe-DdD" firstAttribute="leading" secondItem="fc0-dm-AU5" secondAttribute="leading" id="jRV-Ms-Sja"/>
+                                            <constraint firstItem="fc0-dm-AU5" firstAttribute="top" secondItem="v5P-EL-gnY" secondAttribute="bottom" constant="8" symbolic="YES" id="ki0-zY-twM"/>
+                                            <constraint firstItem="v5P-EL-gnY" firstAttribute="top" secondItem="qA2-Pe-DdD" secondAttribute="bottom" constant="8" symbolic="YES" id="lzP-Iw-SgF"/>
+                                            <constraint firstItem="qA2-Pe-DdD" firstAttribute="leading" secondItem="kMa-RK-60I" secondAttribute="leadingMargin" id="tod-tr-atT"/>
+                                            <constraint firstItem="fc0-dm-AU5" firstAttribute="leading" secondItem="kMa-RK-60I" secondAttribute="leadingMargin" id="xul-id-TgI"/>
+                                            <constraint firstItem="qA2-Pe-DdD" firstAttribute="firstBaseline" secondItem="ceW-A5-Cez" secondAttribute="firstBaseline" id="z0Q-2M-ozV"/>
+                                        </constraints>
+                                        <size key="customSize" width="150" height="203"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="72u-7K-bUE" id="Rky-Ts-ecb"/>
+                                    <outlet property="delegate" destination="72u-7K-bUE" id="Y56-jW-9Gr"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uB0-Z7-nAf" firstAttribute="leading" secondItem="8qx-ID-bJJ" secondAttribute="leading" constant="25" id="1OC-hk-ui5"/>
+                            <constraint firstAttribute="trailing" secondItem="uB0-Z7-nAf" secondAttribute="trailing" constant="25" id="6Cw-WV-qqX"/>
+                            <constraint firstItem="uB0-Z7-nAf" firstAttribute="top" secondItem="4rx-f6-sRQ" secondAttribute="bottom" id="EjW-Oe-ZIf"/>
+                            <constraint firstAttribute="bottom" secondItem="uB0-Z7-nAf" secondAttribute="bottom" id="zpY-Qb-eJm"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -119,7 +260,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKy-ay-vjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="b62-2R-8DC" customClass="CartButtonView" customModule="WellsChallenge" customModuleProvider="target">
+                <view contentMode="scaleToFill" id="b62-2R-8DC" customClass="CartButtonView" customModule="VogueStore" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
@@ -153,12 +294,12 @@
                     </connections>
                 </view>
             </objects>
-            <point key="canvasLocation" x="2203" y="89"/>
+            <point key="canvasLocation" x="2202.4000000000001" y="88.605697151424295"/>
         </scene>
         <!--Vogue Store-->
         <scene sceneID="WNM-05-I58">
             <objects>
-                <viewController id="fEK-zs-QzM" customClass="StoreViewController" customModule="WellsChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fEK-zs-QzM" customClass="StoreViewController" customModule="VogueStore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JFy-XA-aGU"/>
                         <viewControllerLayoutGuide type="bottom" id="yPB-Fd-6Bb"/>
@@ -410,7 +551,7 @@
         <!--Store Page View Controller-->
         <scene sceneID="hOE-WD-1Mb">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="CN4-bi-k1Y" customClass="StorePageViewController" customModule="WellsChallenge" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="CN4-bi-k1Y" customClass="StorePageViewController" customModule="VogueStore" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9lf-OE-X0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="s6e-Mv-F6J">
                     <rect key="frame" x="0.0" y="0.0" width="39" height="37"/>
@@ -422,7 +563,7 @@
         <!--Page Content View Controller-->
         <scene sceneID="0tb-6Z-y2X">
             <objects>
-                <viewController storyboardIdentifier="PageContentViewController" id="GxG-00-6jb" customClass="PageContentViewController" customModule="WellsChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageContentViewController" id="GxG-00-6jb" customClass="PageContentViewController" customModule="VogueStore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1TB-Tx-XLx"/>
                         <viewControllerLayoutGuide type="bottom" id="4ht-iX-ceo"/>
