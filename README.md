@@ -4,8 +4,8 @@
        * User clicks login and is prompted to use touchid to authenticate
 
    * 3-6
-       * The scrollview of products should scroll infinitely
-       * Use the provided api to get the loyalty points to show
+       * The scrollview of products scroll infinitely
+       * Use of the provided api to get the loyalty points to show
            * http://54.191.35.66:8181/pfchang/api/buy username=Michael&grandTotal=0
            * Request is POST
 
