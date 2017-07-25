@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18348AA71DA5C00F005F0449 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18348AA61DA5C00F005F0449 /* Item.swift */; };
+		32CA0250B02318CC1361CE39 /* Pods_VogueStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C4056F84CBC12A57FC0603 /* Pods_VogueStore.framework */; };
 		3AE6C8251D9C5675002F2895 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE6C8241D9C5675002F2895 /* AppDelegate.swift */; };
 		3AE6C8271D9C5675002F2895 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE6C8261D9C5675002F2895 /* LoginViewController.swift */; };
 		3AE6C82A1D9C5675002F2895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE6C8281D9C5675002F2895 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		18348AA61DA5C00F005F0449 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		3029C62B8A58114BBB4AB6F4 /* Pods-WellsChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellsChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WellsChallenge/Pods-WellsChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		32C4056F84CBC12A57FC0603 /* Pods_VogueStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VogueStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE6C8211D9C5675002F2895 /* VogueStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VogueStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE6C8241D9C5675002F2895 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AE6C8261D9C5675002F2895 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		3AE6C8511D9DC03C002F2895 /* PageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
 		3AE6C8531D9DDAC6002F2895 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3AE6C8551D9DE317002F2895 /* CartButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartButtonView.swift; sourceTree = "<group>"; };
+		7D0E175E2E7D56D9E0BFCD63 /* Pods-VogueStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VogueStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VogueStore/Pods-VogueStore.debug.xcconfig"; sourceTree = "<group>"; };
+		B22BE1FC6CF0FCF98B02DC6C /* Pods-VogueStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VogueStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-VogueStore/Pods-VogueStore.release.xcconfig"; sourceTree = "<group>"; };
 		C023949FEB48549E6DE22EFE /* Pods_WellsChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WellsChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD601D21F98E99E825AF47CF /* Pods-WellsChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellsChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-WellsChallenge/Pods-WellsChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +65,7 @@
 			files = (
 				3AE6C8371D9C57EF002F2895 /* LocalAuthentication.framework in Frameworks */,
 				6E6B287F68F518A3BD954E2C /* Pods_WellsChallenge.framework in Frameworks */,
+				32CA0250B02318CC1361CE39 /* Pods_VogueStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +77,8 @@
 			children = (
 				3029C62B8A58114BBB4AB6F4 /* Pods-WellsChallenge.debug.xcconfig */,
 				CD601D21F98E99E825AF47CF /* Pods-WellsChallenge.release.xcconfig */,
+				7D0E175E2E7D56D9E0BFCD63 /* Pods-VogueStore.debug.xcconfig */,
+				B22BE1FC6CF0FCF98B02DC6C /* Pods-VogueStore.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -156,6 +163,7 @@
 			children = (
 				3AE6C8361D9C57EF002F2895 /* LocalAuthentication.framework */,
 				C023949FEB48549E6DE22EFE /* Pods_WellsChallenge.framework */,
+				32C4056F84CBC12A57FC0603 /* Pods_VogueStore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -243,7 +251,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WellsChallenge/Pods-WellsChallenge-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VogueStore/Pods-VogueStore-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		342FA0DC62C2BBAB487F8658 /* [CP] Copy Pods Resources */ = {
@@ -258,7 +266,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WellsChallenge/Pods-WellsChallenge-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VogueStore/Pods-VogueStore-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3B77550B4C29022F80D06D17 /* [CP] Check Pods Manifest.lock */ = {
@@ -273,7 +281,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -414,7 +422,7 @@
 		};
 		3AE6C8341D9C5675002F2895 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3029C62B8A58114BBB4AB6F4 /* Pods-WellsChallenge.debug.xcconfig */;
+			baseConfigurationReference = 7D0E175E2E7D56D9E0BFCD63 /* Pods-VogueStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6KKRC5GQMV;
@@ -430,7 +438,7 @@
 		};
 		3AE6C8351D9C5675002F2895 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD601D21F98E99E825AF47CF /* Pods-WellsChallenge.release.xcconfig */;
+			baseConfigurationReference = B22BE1FC6CF0FCF98B02DC6C /* Pods-VogueStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6KKRC5GQMV;
